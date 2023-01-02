@@ -1,13 +1,30 @@
 .footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 10vh;
   color: var(--white);
   background-color: var(--gray);
   border-top: 3px solid var(--dark-gray);
+  padding: 20px 0;
 }
 
-.footer span {
+.footer section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer p span {
   font-weight: bolder;
+}
+
+.footer a {
+  color: var(--white);
+  text-decoration: none;
 }
