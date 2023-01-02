@@ -40,10 +40,45 @@ blockquote, q {
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+	text: '';
+	text: none;
 }
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+body, select, input, button, textarea {
+	font-family: var(--font-family);
+}
+
+
+
+:root {
+	--font-family: Roboto, "sans-serif";
+
+	--text-h1: 2.0rem;
+	--text-h2: 1.8rem;
+	--text-h3: 1.5rem;
+
+	--light-gray: #666;
+	--gray: #333;
+	--white: #fff;
+	--dark-gray: #111;
+
+	--text-h1: 1.5rem;
+	--text-h2: 1.25rem;
+	--text-h3: 1.125rem;
+
+	--text-md: 1rem;
+	--text-sm: 0.9rem;
+	--text-xs: 0.875rem;
+	
+	--line-height-h1: 2rem;
+	--line-height-h2: 1.75rem;
+	--line-height-h3: 1.75rem;
+
+	--line-height-md: 1.50rem;
+	--line-height-sm: 1.25rem;
+	--line-height-xs: 1rem;
+	
 }
