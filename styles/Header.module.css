@@ -1,0 +1,41 @@
+.header {
+  background-color: var(--gray);
+  color: var(--white);
+}
+
+.header section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo h1 {
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.menu ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+.menu a {
+  color: var(--white);
+  text-decoration: none;
+  padding: 5px;
+  transition: .3s;
+  border-bottom: 2px solid transparent;
+}
+
+.menu a:hover {
+  border-bottom: 2px solid var(--white);
+}
