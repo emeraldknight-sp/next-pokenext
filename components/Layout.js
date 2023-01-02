@@ -1,17 +1,19 @@
+import Head from "next/head";
+
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 
-import Head from "next/head";
+import styles from "../styles/Layout.module.css";
 
 export default function Layout ({children}) {
   return (
     <>
       <Head>
-        <link rel="shortcut icon" href="/images/favicon.ico" />
+        <link rel="shortcut icon" href="favicon.ico" />
         <title>PokeNext</title>
       </Head>
       <Navbar />
-      <main>{children}</main>
+      <main className={styles.container}>{children}</main>
       <Footer />
     </>
   )
