@@ -1,9 +1,9 @@
 import Head from "next/head";
 
 import Footer from "./Footer";
-import Navbar from "./Navbar";
+import Header from "./Header";
 
-import styles from "../styles/Layout.module.css";
+import Container from "./Container";
 
 export default function Layout ({children}) {
   return (
@@ -12,8 +12,10 @@ export default function Layout ({children}) {
         <link rel="shortcut icon" href="favicon.ico" />
         <title>PokeNext</title>
       </Head>
-      <Navbar />
-      <main className={styles.container}>{children}</main>
+      <Header />
+      <main>
+        <Container>{children}</Container>
+      </main>
       <Footer />
     </>
   )
