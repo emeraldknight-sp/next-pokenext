@@ -1,0 +1,78 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 200px;
+  color: var(--white);
+  background-color: var(--gray);
+  border: 2px solid var(--red);
+  border-radius: 8px;
+  box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.5);
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white);
+  padding: 10px;
+  width: 100%;
+  border: 2px solid var(--white);
+  border-radius: 8px 8px 0 0;
+}
+
+.card span {
+  position: relative;
+  top: 10px;
+  content: "";
+  color: var(--white);
+  background-color: var(--red);
+  border: 2px solid var(--red);
+  border-radius: 8px;
+  padding: 4px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-center: center;
+  gap: 16px;
+  padding: 20px;
+}
+
+.info h3 {
+  color: var(--white);
+  font-size: var(--text-h3);
+  line-height: var(--line-height-h3);
+  text-transform: capitalize;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.info button {
+  background-color: var(--white);
+  border: 2px solid var(--white);
+  border-radius: 8px;
+  padding: 10px;
+  transition: .9s;
+  cursor: pointer;
+}
+
+.info button a {
+  font-weight: bolder;
+  text-decoration: none;
+  color: var(--gray);
+}
+
+.info button:hover {
+  border: 2px solid var(--red);
+  background-color: var(--red);
+  color: var(--white);
+}
+
+.info button:hover a {
+  color: var(--white);
+ }
