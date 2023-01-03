@@ -60,10 +60,11 @@ body, select, input, button, textarea {
 	--text-h2: 1.8rem;
 	--text-h3: 1.5rem;
 
-	--light-gray: #666;
-	--gray: #333;
-	--white: #fff;
-	--dark-gray: #111;
+	--light-gray: #666666;
+	--gray: #333333;
+	--white: #ffffff;
+	--red: #EC1E24;
+	--dark-gray: #111111;
 
 	--text-h1: 1.5rem;
 	--text-h2: 1.25rem;
