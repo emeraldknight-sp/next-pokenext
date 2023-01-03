@@ -1,1 +1,26 @@
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 20px 0;
+}
 
+.logo h1 {
+  font-size: var(--text-h1);
+  line-height: var(--line-height-h1);
+  font-weight: bolder;
+}
+
+.logo h1 span {
+  color: var(--red);
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  padding: 0 0 50px;
+}
