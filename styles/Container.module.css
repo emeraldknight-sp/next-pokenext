@@ -3,6 +3,10 @@
   margin: 0 auto;
 }
 
+.main_container {
+  min-height: 70vh;
+}
+
 @media (min-width: 1024px) {
   .container {
     max-width: 80vw;

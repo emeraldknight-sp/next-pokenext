@@ -2,7 +2,6 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,6 +23,7 @@ time, mark, audio, video {
   box-sizing: border-box;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -50,8 +50,6 @@ table {
 body, select, input, button, textarea {
 	font-family: var(--font-family);
 }
-
-
 
 :root {
 	--font-family: Roboto, "sans-serif";
@@ -81,5 +79,4 @@ body, select, input, button, textarea {
 	--line-height-md: 1.50rem;
 	--line-height-sm: 1.25rem;
 	--line-height-xs: 1rem;
-	
 }
