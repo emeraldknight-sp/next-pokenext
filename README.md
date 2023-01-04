@@ -53,9 +53,11 @@ yarn run dev
 
 ## 🔖 Layout
 
-<img src="public/images/pokenext-home.png" width="100%" alt="Layout da página inicial de Pokenext" > <br>
+<img src=".github/pokenext-home.png" width="100%" alt="Layout da página inicial de Pokenext" > <br>
 
-<img src="public/images/pokenext-details.png" width="100%" alt="Layout da página de detalhes de Pokenext">
+<img src=".github/pokenext-details.png" width="100%" alt="Layout da página de detalhes de Pokenext">
+
+<img src=".github/pokenext-about.png" width="100%" alt="Layout da página sobre de Pokenext">
 
 ## 📝 Licença
 
