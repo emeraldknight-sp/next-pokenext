@@ -6,7 +6,7 @@ import Container from "./Container";
 
 import styles from "../styles/Container.module.css";
 
-export default function Layout ({children}) {
+export default function Layout({children}) {
   return (
     <>
       <Head>

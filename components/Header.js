@@ -4,7 +4,7 @@ import Link from "next/link";
 import styles from "../styles/Header.module.css"
 import Container from "./Container";
 
-export default function Navbar () {
+export default function Navbar() {
   return (
     <header className={styles.header}>
       <Container>

@@ -4,8 +4,8 @@ import Container from "./Container"
 
 import {FaInstagram, FaLinkedin, FaWhatsapp, FaDiscord} from "react-icons/fa"
 
-export default function Footer () {
-
+export default function Footer() {
+  
   const lastYear = new Date().getFullYear()
 
   return (

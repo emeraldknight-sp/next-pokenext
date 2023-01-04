@@ -1,5 +1,5 @@
-import { Image } from "next/image";
-import { Card } from "../components/Card";
+import Image from "next/image";
+import Card  from "../components/Card";
 import styles from "../styles/Home.module.css";
 
 export async function getStaticProps() {
