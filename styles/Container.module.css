@@ -4,7 +4,10 @@
 }
 
 .main_container {
-  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-container: center;
+  min-height: 80vh;
 }
 
 @media (min-width: 1024px) {
