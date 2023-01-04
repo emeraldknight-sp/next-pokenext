@@ -1,18 +1,19 @@
-import Link from "next/link"
-import styles from "../styles/Footer.module.css"
-import Container from "./Container"
+import Link from "next/link";
+import styles from "../styles/Footer.module.css";
+import Container from "./Container";
 
-import {FaInstagram, FaLinkedin, FaWhatsapp, FaDiscord} from "react-icons/fa"
+import { FaInstagram, FaLinkedin, FaWhatsapp, FaDiscord } from "react-icons/fa";
 
 export default function Footer() {
-  
-  const lastYear = new Date().getFullYear()
+  const lastYear = new Date().getFullYear();
 
   return (
     <footer className={styles.footer}>
       <Container>
         <p>Desenvolvido por David Almeida</p>
-        <p><span>PokeNext</span>&copy; 2022 - {lastYear}</p> 
+        <p>
+          <span>PokeNext</span>&copy; 2022 - {lastYear}
+        </p>
         <ul>
           <li>
             <Link
@@ -38,12 +39,16 @@ export default function Footer() {
             </Link>
           </li>
           <li>
-            <Link href="https://discord.gg/RUx9WxZ" target="_blank" rel="noopener noreferrer">
+            <Link
+              href="https://discord.gg/RUx9WxZ"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaDiscord size={24} />
             </Link>
           </li>
         </ul>
       </Container>
     </footer>
-  )
+  );
 }
