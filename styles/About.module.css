@@ -1,11 +1,12 @@
 .about {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    text-align: center;
-    height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 250px;
+  text-align: center;
+  margin: 40px auto;
 }
 
 .about h2 {
@@ -16,4 +17,10 @@
 .about p {
   font-size: var(--text-md);
   line-height: var(--line-height-md);
+}
+
+@media only screen and (min-width: 768px) {
+  .about {
+    width: 800px;
+  }
 }
