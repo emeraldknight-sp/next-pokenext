@@ -9,5 +9,5 @@ export default function NotFound() {
         <Image src="/images/ash.png" width="100" height="200" alt="Ash" />
       </figure>
     </div>
-  )
+  );
 }

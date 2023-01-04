@@ -3,12 +3,11 @@ import Link from "next/link";
 
 import { FaAngleLeft } from "react-icons/fa";
 
-import styles from "../../styles/Pokemon.module.css"
+import styles from "../../styles/Pokemon.module.css";
 
 export const getStaticPaths = async () => {
-
   const maxPokemons = 250;
-  const api = 'https://pokeapi.co/api/v2/pokemon/';
+  const api = "https://pokeapi.co/api/v2/pokemon/";
 
   const res = await fetch(`${api}/?limit=${maxPokemons}`);
   const data = await res.json();
@@ -16,32 +15,30 @@ export const getStaticPaths = async () => {
   const paths = data.results.map((pokemon, index) => {
     return {
       params: {
-        pokemonId: (index + 1).toString()
+        pokemonId: (index + 1).toString(),
       },
-    }
-  })
-
+    };
+  });
 
   return {
-    paths, 
+    paths,
     fallback: false,
-  }
-
-}
+  };
+};
 
 export const getStaticProps = async (context) => {
   const id = context.params.pokemonId;
   const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`);
   const data = await res.json();
- 
-  return {
-    props: { 
-      pokemon: data 
-    }
-  }
-}
 
-export default function Pokemon({pokemon}) {
+  return {
+    props: {
+      pokemon: data,
+    },
+  };
+};
+
+export default function Pokemon({ pokemon }) {
   return (
     <div className={styles.main_container}>
       <div className={styles.card}>
@@ -49,7 +46,12 @@ export default function Pokemon({pokemon}) {
           <h3>{pokemon.name}</h3>
         </div>
         <figure>
-          <Image src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.id}.png`} width="200" height="200" alt={`${pokemon.name}`} />
+          <Image
+            src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.id}.png`}
+            width="200"
+            height="200"
+            alt={`${pokemon.name}`}
+          />
         </figure>
         <div className={styles.data}>
           <div className={styles.data_id}>
@@ -60,7 +62,14 @@ export default function Pokemon({pokemon}) {
             <p>Tipo:</p>
             <ul>
               {pokemon.types.map((item, index) => (
-                <li key={index} className={`${styles.type} ${styles['type_' + item.type.name]}`}>{item.type.name}</li>
+                <li
+                  key={index}
+                  className={`${styles.type} ${
+                    styles["type_" + item.type.name]
+                  }`}
+                >
+                  {item.type.name}
+                </li>
               ))}
             </ul>
           </div>
@@ -76,7 +85,9 @@ export default function Pokemon({pokemon}) {
           </div>
         </div>
       </div>
-      <Link href="/" className={styles.button}><FaAngleLeft /> Voltar</Link>
+      <Link href="/" className={styles.button}>
+        <FaAngleLeft /> Voltar
+      </Link>
     </div>
-  )
+  );
 }
