@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align="center"> PokeNext </h1>
 
-## Getting Started
+<p align="center">
+Projeto desenvolvido com NextJS, CSS Modules e consumo de APIs
+</p>
 
-First, run the development server:
+<p align="center">
+  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#memo-licença">Licença</a>
+</p>
 
-```bash
-npm run dev
-# or
-yarn dev
+<p align="center">
+  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=49AA26&labelColor=000000">
+</p>
+
+<br>
+
+<p align="center">
+  <img alt="pokemon" src=".github/logo.png" width="30%">
+</p>
+
+## 🚀 Tecnologias
+
+Esse projeto foi desenvolvido com as seguintes tecnologias:
+
+- HTML5, CSS3 e JS ES6+
+- [Create next-app](https://nextjs.org/docs/api-reference/create-next-app)
+- [Node e Yarn](https://nodejs.org/)
+- [React-icons](https://react-icons.github.io/react-icons/)
+- [Prettier](https://prettier.io/)
+- [ESLint](https://eslint.org/docs/latest/)
+- [Next](https://nextjs.org/)
+
+## 💻 Projeto
+
+Este projeto foi desenvolvido com base nas aulas de [Matheus Battisti](https://github.com/matheusbattisti) no [Youtube](https://www.youtube.com/playlist?list=PLnDvRpP8BnezfJcfiClWskFOLODeqI_Ft) para o aprendizado do framework Next (baseado em [React](https://reactjs.org/)), para a prática da estilização utilizando CSS Modules, e além disso, também para o consumo de APIs e a disposição dos dados para o usuário construindo uma interface que seja responsiva para diferentes tamanhos de viewport de cada usuário com [Mobile First](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Responsive/Mobile_first).
+
+## 🏡 Executando o projeto
+
+Primeiro faça a instalação das dependências do projeto com o comando
+
+```sh
+yarn
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Este é um projeto simples e se você o clonou em sua máquina para que possa ver ele em execução basta digitar o comando
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```sh
+yarn run dev
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## 🔖 Layout
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+<img src="public/images/pokenext-home.png" width="100%" alt="Layout da página inicial de Pokenext" > <br>
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+<img src="public/images/pokenext-details.png" width="100%" alt="Layout da página de detalhes de Pokenext">
 
-## Learn More
+## 📝 Licença
 
-To learn more about Next.js, take a look at the following resources:
+Esse projeto está sob a licença MIT.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+---
