@@ -1,0 +1,206 @@
+.main_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 40px 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 250px;
+  border: 2px solid var(--gray);
+  border-radius: 4px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--gray);
+  width: 100%;
+  height: 70px;
+}
+
+.title h3 {
+  font-size: var(--text-h3);
+  line-height: var(--line-height-h3);
+  color: var(--white);
+  text-transform: capitalize;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  padding: 0 0 20px;
+}
+
+.data p, 
+.data span {
+  font-size: var(--text-md);
+  line-height: var(--line-height-md);
+}
+.data p {
+  font-weight: bolder;
+}
+
+.data_id,
+.data_type {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.data_id span {
+  color: var(--white);
+  background-color: var(--red);
+  border: 2px solid var(--red);
+  border-radius: 8px;
+  padding: 4px;
+}
+
+.data_type ul {
+  display: flex;
+  gap: 1rem;
+}
+
+.data_details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.data_height,
+.data_weight {
+  padding: 10px;
+}
+
+.data_details div:nth-child(1) {
+  border-right: 1px solid var(--light-gray);
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  width: 250px;
+  text-decoration: none;
+  background-color: var(--white);
+  border: 2px solid var(--white);
+  color: var(--gray);
+  border-radius: 8px;
+  padding: 10px;
+  transition: .9s;
+  cursor: pointer;
+}
+
+.button:active {
+  border: 2px solid var(--red);
+  background-color: var(--red);
+  color: var(--white);
+}
+
+@media only screen and (min-width: 1024px) {
+  .button:hover {
+    border: 2px solid var(--red);
+    background-color: var(--red);
+    color: var(--white);
+  }
+}
+
+.type {
+  color: var(--white);
+  background-color: var(--gray);
+  text-transform: uppercase;
+  border: 1px solid var(--white);
+  border-radius: 4px;
+  padding: 8px;
+}
+
+.type_normal {
+  background-color: #aa9;
+}
+
+.type_fire {
+  background-color: #f42;
+}
+
+.type_water {
+  background-color: #39f;
+}
+
+.type_eletric {
+  background-color: #fc3;
+}
+
+.type_grass {
+  background-color: #7c5;
+}
+
+.type_ice {
+  background-color: #6cf;
+}
+
+.type_fighting {
+  background-color: #b54;
+}
+
+.type_poison {
+  background-color: #a59;
+}
+
+.type_ground {
+  background-color: #db5;
+}
+
+.type_flying {
+  background-color: #89f;
+}
+
+.type_psychic {
+  background-color: #f59;
+}
+
+.type_bug {
+  background-color: #ab2;
+}
+
+.type_rock {
+  background-color: #ba6;
+}
+
+.type_ghost {
+  background-color: #66b;
+}
+
+.type_dragon {
+  background-color: #76e;
+}
+
+.type_dark {
+  background-color: #754;
+}
+
+.type_steel {
+  background-color: #aab;
+}
+
+.type_fairy {
+  background-color: #e9e;
+}
+
