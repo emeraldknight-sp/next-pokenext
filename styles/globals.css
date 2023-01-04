@@ -56,19 +56,19 @@ body, select, input, button, textarea {
 :root {
 	--font-family: Roboto, "sans-serif";
 
-	--text-h1: 2.0rem;
-	--text-h2: 1.8rem;
-	--text-h3: 1.5rem;
-
 	--light-gray: #666666;
 	--gray: #333333;
 	--white: #ffffff;
 	--red: #EC1E24;
 	--dark-gray: #111111;
-
+	
 	--text-h1: 1.5rem;
 	--text-h2: 1.25rem;
 	--text-h3: 1.125rem;
+
+	--text-h1: 2.0rem;
+	--text-h2: 1.8rem;
+	--text-h3: 1.5rem;
 
 	--text-md: 1rem;
 	--text-sm: 0.9rem;
