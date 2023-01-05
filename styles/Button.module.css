@@ -30,11 +30,11 @@
 }
 
 .large {
-  max-width: 300px;
+  width: 250px;
 }
 
 .medium {
-  min-width: 100px;
+  width: 150px;
 }
 
 .small {
