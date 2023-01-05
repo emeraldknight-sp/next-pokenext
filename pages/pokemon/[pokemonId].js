@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import { FaAngleLeft } from "react-icons/fa";
 
 import Button from "../../components/Button";
+import Loading from "../../components/Loading";
 
 import styles from "../../styles/Pokemon.module.css";
 
@@ -43,7 +44,7 @@ export default function Pokemon({ pokemon }) {
   const router = useRouter();
 
   if (router.isFallback) {
-    return <div>Carregando...</div>;
+    return <Loading />;
   }
 
   return (
@@ -63,7 +64,6 @@ export default function Pokemon({ pokemon }) {
         </figure>
         <div className={styles.data}>
           <div className={styles.data_id}>
-            <p>Número:</p>
             <span>#{pokemon.id}</span>
           </div>
           <div className={styles.data_type}>
@@ -84,7 +84,7 @@ export default function Pokemon({ pokemon }) {
           <div className={styles.data_details}>
             <div className={styles.data_height}>
               <p>Altura:</p>
-              <span>{pokemon.height * 10} cm</span>
+              <span>{pokemon.height / 10} Kg</span>
             </div>
             <div className={styles.data_weight}>
               <p>Peso:</p>
