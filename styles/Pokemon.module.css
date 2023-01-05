@@ -93,36 +93,6 @@
   border-right: 1px solid var(--light-gray);
 }
 
-.button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 4px;
-  width: 250px;
-  text-decoration: none;
-  background-color: var(--white);
-  border: 2px solid var(--white);
-  color: var(--gray);
-  border-radius: 8px;
-  padding: 10px;
-  transition: .9s;
-  cursor: pointer;
-}
-
-.button:active {
-  border: 2px solid var(--red);
-  background-color: var(--red);
-  color: var(--white);
-}
-
-@media only screen and (min-width: 1024px) {
-  .button:hover {
-    border: 2px solid var(--red);
-    background-color: var(--red);
-    color: var(--white);
-  }
-}
-
 .type {
   color: var(--white);
   background-color: var(--gray);
