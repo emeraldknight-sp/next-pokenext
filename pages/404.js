@@ -1,4 +1,5 @@
 import Image from "next/image";
+
 import styles from "../styles/404.module.css";
 
 export default function NotFound() {
