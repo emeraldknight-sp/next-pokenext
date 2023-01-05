@@ -1,8 +1,9 @@
 import Link from "next/link";
-import styles from "../styles/Footer.module.css";
+import { FaInstagram, FaLinkedin, FaWhatsapp, FaDiscord } from "react-icons/fa";
+
 import Container from "./Container";
 
-import { FaInstagram, FaLinkedin, FaWhatsapp, FaDiscord } from "react-icons/fa";
+import styles from "../styles/Footer.module.css";
 
 export default function Footer() {
   const lastYear = new Date().getFullYear();

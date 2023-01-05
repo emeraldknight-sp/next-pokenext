@@ -1,8 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import styles from "../styles/Header.module.css";
 import Container from "./Container";
+
+import styles from "../styles/Header.module.css";
 
 export default function Navbar() {
   return (

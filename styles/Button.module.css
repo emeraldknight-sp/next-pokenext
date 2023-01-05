@@ -1,0 +1,43 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bolder;
+  border-radius: 8px;
+  padding: 10px;
+  transition: .5s;
+  cursor: pointer;
+}
+
+.button:active {
+  filter: brightness(.6);
+}
+
+.button:hover {
+  filter: brightness(.9)
+}
+
+.primary {
+  background-color: var(--white);
+  border: 2px solid var(--white);
+  color: var(--gray);
+}
+
+.secondary {
+  background-color: var(--red);
+  border: 2px solid var(--red);
+  color: var(--white);
+}
+
+.large {
+  width: 250px;
+}
+
+.medium {
+  width: 150px;
+}
+
+.small {
+  width: 50px
+}
+

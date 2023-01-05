@@ -1,8 +1,8 @@
 import Image from "next/image";
-import Link from "next/link";
 import { useRouter } from "next/router";
-
 import { FaAngleLeft } from "react-icons/fa";
+
+import Button from "../../components/Button";
 
 import styles from "../../styles/Pokemon.module.css";
 
@@ -93,9 +93,9 @@ export default function Pokemon({ pokemon }) {
           </div>
         </div>
       </div>
-      <Link href="/" className={styles.button}>
+      <Button variant="secondary" size="large" onClick={() => router.push("/")}>
         <FaAngleLeft /> Voltar
-      </Link>
+      </Button>
     </div>
   );
 }
