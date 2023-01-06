@@ -42,8 +42,8 @@
   background: #777;
 }
 
-/* SKELETON CARD */
-.skeleton_card {
+/* SKELETON POKEMON */
+.skeleton_pokemon {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -53,23 +53,22 @@
   border-radius: 4px;
 }
 
-.skeleton_card_title {
+.skeleton_pokemon_title {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background: var(--light-gray); */
   width: 100%;
   height: 70px;
 }
 
-.skeleton_card_image {
+.skeleton_pokemon_image {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
 }
 
-.skeleton_card_data {
+.skeleton_pokemon_data {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -79,7 +78,7 @@
   height: 230px;
 }
 
-.skeleton_card_details {
+.skeleton_pokemon_details {
   display: flex;
   align-items: center;
   justify-content: center;
