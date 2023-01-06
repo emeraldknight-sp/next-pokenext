@@ -1,35 +1,33 @@
 import SkeletonElement from "./SkeletonElement";
+import SkeletonWrapper from "./SkeletonWrapper";
 import Shimmer from "./Shimmer";
 
 import styles from "../../styles/Skeletons.module.css";
 
-export default function SkeletonCard() {
+export default function SkeletonPokemon() {
   return (
-    <div className={`${styles.skeleton_wrapper} ${styles.light}`}>
-      <div className={styles.skeleton_card}>
-        {/* TITLE */}
-        <div className={styles.skeleton_card_title}>
+    <SkeletonWrapper>
+      <div className={styles.skeleton_pokemon}>
+        <div className={styles.skeleton_pokemon_title}>
           <SkeletonElement type="title" />
         </div>
-        {/* IMAGE */}
-        <div className={styles.skeleton_card_image}>
+        <div className={styles.skeleton_pokemon_image}>
           <SkeletonElement type="image" />
         </div>
-        {/* DATA */}
-        <div className={styles.skeleton_card_data}>
-          <div className={styles.skeleton_card_details}>
+        <div className={styles.skeleton_pokemon_data}>
+          <div className={styles.skeleton_pokemon_details}>
             <SkeletonElement type="content" />
           </div>
-          <div className={styles.skeleton_card_details}>
+          <div className={styles.skeleton_pokemon_details}>
             <SkeletonElement type="content" />
           </div>
-          <div className={styles.skeleton_card_details}>
+          <div className={styles.skeleton_pokemon_details}>
             <SkeletonElement type="content" />
             <SkeletonElement type="content" />
           </div>
         </div>
       </div>
       <Shimmer />
-    </div>
+    </SkeletonWrapper>
   );
 }
