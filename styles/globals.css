@@ -54,9 +54,9 @@ body, select, input, button, textarea {
 :root {
 	--font-family: Roboto, "sans-serif";
 
-	--light-gray: #666666;
+	--light-gray: #C3C3C3;
 	--gray: #333333;
-	--white: #ffffff;
+	--white: #FFFFFF;
 	--red: #EC1E24;
 	--dark-gray: #111111;
 	
