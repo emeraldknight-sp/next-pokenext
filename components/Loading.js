@@ -1,5 +1,3 @@
-export default function Loading() {
-  return (
-    <div>🌀 Carrengando...</div>
-  )
+export default function Loading({ children }) {
+  return <>{children}</>;
 }
