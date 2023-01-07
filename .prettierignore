@@ -32,4 +32,4 @@ yarn-error.log*
 .vercel
 
 # global style
-.globals.css
+/styles/globals.css
