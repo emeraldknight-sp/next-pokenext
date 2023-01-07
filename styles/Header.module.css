@@ -18,6 +18,7 @@
 }
 
 .logo h1 {
+  color: var(--white);
   font-weight: bolder;
   text-transform: uppercase;
 }
