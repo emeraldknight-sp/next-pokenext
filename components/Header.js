@@ -13,7 +13,7 @@ export default function Navbar() {
           <Link href="/">
             <figure>
               <Image
-                src="/images/pokeball.png"
+                src="/images/ball.png"
                 width="30"
                 height="30"
                 alt="PokeNext"
