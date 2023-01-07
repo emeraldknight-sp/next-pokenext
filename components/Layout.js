@@ -45,7 +45,7 @@ export default function Layout({ children }) {
           name="keywords"
           content="Pokenext, Pokeapi, Pokemon, CSS Modules, APIs, React, Next, Project"
         />
-        <title>PokeNext</title>
+        <title>PokeNext - Um projeto NextJS com CSS Modules e Consulo de APIs</title>
       </Head>
       <Header />
       <main className={styles.main_container}>

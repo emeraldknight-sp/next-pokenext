@@ -9,20 +9,18 @@ export default function Navbar() {
   return (
     <header className={styles.header}>
       <Container>
-        <div className={styles.logo}>
-          <Link href="/">
-            <figure>
-              <Image
-                src="/images/ball.png"
-                width="30"
-                height="30"
-                alt="PokeNext"
-                priority
-              />
-            </figure>
-          </Link>
+        <Link href="/" className={styles.logo}>
+          <figure>
+            <Image
+              src="/images/ball.png"
+              width="30"
+              height="30"
+              alt="PokeNext"
+              priority
+            />
+          </figure>
           <h1>Pokenext</h1>
-        </div>
+        </Link>
         <nav className={styles.menu}>
           <ul>
             <li>
