@@ -36,7 +36,7 @@ export default function Layout({ children }) {
         <meta name="revisit-after" content="1 day" />
         <meta name="language" content="Portuguese" />
         <meta name="generator" content="N/A" />
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
         <meta
           name="description"
           content="pokenext api pokeapi pokemon pokedex"
