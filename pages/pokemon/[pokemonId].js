@@ -3,6 +3,8 @@ import { useRouter } from "next/router";
 import { FaAngleLeft } from "react-icons/fa";
 
 import Button from "../../components/Button";
+import Loading from "../../components/Loading";
+import SkeletonPokemon from "../../components/Skeletons/SkeletonPokemon";
 
 import styles from "../../styles/Pokemon.module.css";
 
@@ -42,57 +44,69 @@ export const getStaticProps = async (context) => {
 export default function Pokemon({ pokemon }) {
   const router = useRouter();
 
-  if (router.isFallback) {
-    return <div>Carregando...</div>;
-  }
+  // if (router.isFallback) {
+  //   return (
+  //     <Loading>
+  //       <SkeletonPokemon />
+  //     </Loading>
+  //   );
+  // }
 
   return (
     <div className={styles.main_container}>
-      <div className={styles.card}>
-        <div className={styles.title}>
-          <h3>{pokemon.name}</h3>
-        </div>
-        <figure>
-          <Image
-            src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.id}.png`}
-            width="200"
-            height="200"
-            alt={`${pokemon.name}`}
-            priority
-          />
-        </figure>
-        <div className={styles.data}>
-          <div className={styles.data_id}>
-            <p>Número:</p>
-            <span>#{pokemon.id}</span>
+      {pokemon && (
+        <div className={styles.card}>
+          <div className={styles.title}>
+            <h3>{pokemon.name}</h3>
           </div>
-          <div className={styles.data_type}>
-            <p>Tipo:</p>
-            <ul>
-              {pokemon.types.map((item, index) => (
-                <li
-                  key={index}
-                  className={`${styles.type} ${
-                    styles["type_" + item.type.name]
-                  }`}
-                >
-                  {item.type.name}
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div className={styles.data_details}>
-            <div className={styles.data_height}>
-              <p>Altura:</p>
-              <span>{pokemon.height * 10} cm</span>
+          <figure>
+            <Image
+              src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.id}.png`}
+              width="200"
+              height="200"
+              alt={`${pokemon.name}`}
+              priority
+            />
+          </figure>
+          <div className={styles.data}>
+            <div className={styles.data_id}>
+              <span>#{pokemon.id}</span>
             </div>
-            <div className={styles.data_weight}>
-              <p>Peso:</p>
-              <span>{pokemon.weight / 10} Kg</span>
+            <div className={styles.data_type}>
+              <p>Tipo:</p>
+              <ul>
+                {pokemon.types.map((item, index) => (
+                  <li
+                    key={index}
+                    className={`${styles.type} ${
+                      styles["type_" + item.type.name]
+                    }`}
+                  >
+                    {item.type.name}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className={styles.data_details}>
+              <div className={styles.data_height}>
+                <p>Altura:</p>
+                <span>{pokemon.height / 10} Kg</span>
+              </div>
+              <div className={styles.data_weight}>
+                <p>Peso:</p>
+                <span>{pokemon.weight / 10} Kg</span>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      )}
+
+      {!pokemon && (
+        <Loading>
+          <SkeletonPokemon theme="light" />
+        </Loading>
+      )}
+
       <Button variant="secondary" size="large" onClick={() => router.push("/")}>
         <FaAngleLeft /> Voltar
       </Button>

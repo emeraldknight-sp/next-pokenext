@@ -54,10 +54,10 @@ body, select, input, button, textarea {
 :root {
 	--font-family: Roboto, "sans-serif";
 
-	--light-gray: #666666;
+	--light-gray: #c3c3c3;
 	--gray: #333333;
 	--white: #ffffff;
-	--red: #EC1E24;
+	--red: #ec1e24;
 	--dark-gray: #111111;
 	
 	--text-h1: 1.5rem;
@@ -76,7 +76,7 @@ body, select, input, button, textarea {
 	--line-height-h2: 1.75rem;
 	--line-height-h3: 1.75rem;
 
-	--line-height-md: 1.50rem;
+	--line-height-md: 1.5rem;
 	--line-height-sm: 1.25rem;
 	--line-height-xs: 1rem;
 }

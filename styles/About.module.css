@@ -21,6 +21,12 @@
 
 @media only screen and (min-width: 768px) {
   .about {
+    width: 600px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .about {
     width: 800px;
   }
 }
