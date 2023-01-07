@@ -39,7 +39,7 @@ export default function Layout({ children }) {
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
         <meta
           name="description"
-          content="pokenext api pokeapi pokemon pokedex"
+          content="Projeto desenvolvido com NextJS, CSS Modules e consumo de APIs."
         />
         <meta
           name="keywords"
