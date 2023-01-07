@@ -1,5 +1,7 @@
-import styles from "../../styles/Skeletons.module.css"
+import styles from "../../styles/Skeletons.module.css";
 
 export default function SkeletonElement({ type }) {
-  return <div className={`${styles.skeleton} ${styles[`skeleton_${type}`]}`}></div>;
+  return (
+    <div className={`${styles.skeleton} ${styles[`skeleton_${type}`]}`}></div>
+  );
 }

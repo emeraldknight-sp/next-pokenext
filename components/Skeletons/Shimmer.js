@@ -1,4 +1,4 @@
-import styles from "../../styles/Skeletons.module.css"
+import styles from "../../styles/Skeletons.module.css";
 
 export default function Shimmer() {
   return (
