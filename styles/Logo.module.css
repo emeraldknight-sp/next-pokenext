@@ -1,0 +1,10 @@
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  font-weight: bolder;
+  text-transform: uppercase;
+  text-decoration: none;
+  gap: 1rem;
+}
