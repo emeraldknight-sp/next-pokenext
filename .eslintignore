@@ -1,0 +1,13 @@
+# Files ignored by ESLint
+
+# Ignore all files in the node_modules folder
+node_modules/**
+
+# Ignore all files in the build folder
+build/**
+
+# Ignore specific output files
+dist/**
+
+# Other files to be ignored by ESLint
+# ...
