@@ -1,66 +1,91 @@
-<h1 align="center"> PokeNext </h1>
+<div align="center">
+  <h1>🔴 Project: PokeNext</h1>
+</div>
 
-<p align="center">
-Projeto desenvolvido com NextJS, CSS Modules e consumo de APIs
-</p>
+<div align="center">
+  <img width="100" title="pokenext logo" src=".github/logo.png"/>
+</div>
 
-<p align="center">
-  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-licença">Licença</a>
-</p>
+<div align="center">
+  <p>
+    This project is an introduction to Next to learn some features, configurations and how to style each part of the code using CSS Modules, in addition, we use API consumption to display data about various pokemons and also display detailed information on pages created for each specific character through the native routing that Next provides us.
+  </p>
+</div>
 
-<p align="center">
-  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=49AA26&labelColor=000000">
-</p>
+<div align="center">
+  <a href="https://classic.yarnpkg.com/lang/en/docs/" target="_blank">
+    <img alt="Static Badge" src="https://img.shields.io/badge/yarn-v1.3.4-green">
+  </a>
+  <a href="https://www.npmjs.com/package/next" target="_blank">
+    <img alt="Static Badge" src="https://img.shields.io/badge/next-14.2.5-black">
+  </a>
+  <a href="https://www.npmjs.com/package/react" target="_blank">
+    <img alt="Static Badge" src="https://img.shields.io/badge/react-18.3.1-blue">
+  </a>
+  <a href="https://www.npmjs.com/package/react-icons" target="_blank">
+    <img alt="Static Badge" src="https://img.shields.io/badge/react_icons-5.2.1-e703fc.svg">
+  </a>
+  <a href="https://choosealicense.com/" target="_blank">
+    <img alt="Static Badge" src="https://img.shields.io/badge/License-MIT-green.svg">
+  </a>
+  <a href="https://vercel.com/" target="_blank">
+    <img alt="Static Badge" src="https://img.shields.io/badge/Vercel-black?style=flat&logo=Vercel&logoColor=white">
+  </a>
+</div>
 
-<br>
+## 🛠️ Technologies
 
-<p align="center">
-  <img alt="pokemon" src=".github/logo.png" width="30%">
-</p>
-
-## 🚀 Tecnologias
-
-Esse projeto foi desenvolvido com as seguintes tecnologias:
-
-- HTML5, CSS3 e JS ES6+
-- [Create next-app](https://nextjs.org/docs/api-reference/create-next-app)
+- HTML5, CSS3, JS ES6+
 - [Node e Yarn](https://nodejs.org/)
+- [Next.js](https://nextjs.org/docs)
+- [React](https://react.dev/)
 - [React-icons](https://react-icons.github.io/react-icons/)
+- [Eslint](https://eslint.org/)
 - [Prettier](https://prettier.io/)
-- [ESLint](https://eslint.org/docs/latest/)
-- [Next](https://nextjs.org/)
 
-## 💻 Projeto
+## 📣 Funcionalities
 
-Este projeto foi desenvolvido com base nas aulas de [Matheus Battisti](https://github.com/matheusbattisti) no [Youtube](https://www.youtube.com/playlist?list=PLnDvRpP8BnezfJcfiClWskFOLODeqI_Ft) para o aprendizado do framework Next (baseado em [React](https://reactjs.org/)), para a prática da estilização utilizando CSS Modules, e além disso, também para o consumo de APIs e a disposição dos dados para o usuário construindo uma interface que seja responsiva para diferentes tamanhos de viewport de cada usuário com [Mobile First](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Responsive/Mobile_first).
+- Display of all characters on screen
+- Fetch data from the API
+- Custom error pages
+- Individual display of characters by routing
 
-## 🏡 Executando o projeto
+## 💿 Installing
 
-Primeiro faça a instalação das dependências do projeto com o comando
+Install the project with the following command
 
-```sh
-yarn
+```bash
+  yarn install
 ```
 
-Este é um projeto simples e se você o clonou em sua máquina para que possa ver ele em execução basta digitar o comando
+## 💻 Running project
 
-```sh
-yarn run dev
+```bash
+  yarn dev
 ```
 
-## 🔖 Layout
+## 🚀 Deploy
 
-<img src=".github/pokenext-home.png" width="100%" alt="Layout da página inicial de Pokenext" > <br>
+To deploy this project, execute
 
-<img src=".github/pokenext-details.png" width="100%" alt="Layout da página de detalhes de Pokenext">
+```bash
+  vercel
+```
 
-<img src=".github/pokenext-about.png" width="100%" alt="Layout da página sobre de Pokenext">
+## 🧰 Used stacks
 
-## 📝 Licença
+**Front-end:** HTML5, CSS3, Javascript, CSS Modules, React, React-icons
 
-Esse projeto está sob a licença MIT.
+**Back-end:** Not used
 
----
+## 📸 Screenshots
+
+![LayoutHome](.github/pokenext-home.png)
+
+![LayoutDetails](.github/pokenext-details.png)
+
+![LayoutAbout](.github/pokenext-about.png)
+
+## 📝 License
+
+This project is under [MIT license](LICENSE).
