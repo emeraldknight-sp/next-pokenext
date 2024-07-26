@@ -52,7 +52,7 @@ body, select, input, button, textarea {
 }
 
 :root {
-	--font-family: Roboto, "sans-serif";
+	--font-family: "Roboto", sans-serif;
 
 	--light-gray: #c3c3c3;
 	--gray: #333333;
